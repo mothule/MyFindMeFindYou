@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5423A44F16CBFEC200AEF4BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423A44E16CBFEC200AEF4BD /* UIKit.framework */; };
+		5423A45116CBFEC200AEF4BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423A45016CBFEC200AEF4BD /* Foundation.framework */; };
+		5423A45316CBFEC200AEF4BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423A45216CBFEC200AEF4BD /* CoreGraphics.framework */; };
+		5423A45916CBFEC200AEF4BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5423A45716CBFEC200AEF4BD /* InfoPlist.strings */; };
+		5423A45B16CBFEC200AEF4BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423A45A16CBFEC200AEF4BD /* main.m */; };
+		5423A45F16CBFEC200AEF4BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423A45E16CBFEC200AEF4BD /* AppDelegate.m */; };
+		5423A46116CBFEC200AEF4BD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A46016CBFEC200AEF4BD /* Default.png */; };
+		5423A46316CBFEC200AEF4BD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A46216CBFEC200AEF4BD /* Default@2x.png */; };
+		5423A46516CBFEC200AEF4BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A46416CBFEC200AEF4BD /* Default-568h@2x.png */; };
+		5423A46816CBFEC300AEF4BD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423A46716CBFEC300AEF4BD /* FirstViewController.m */; };
+		5423A46A16CBFEC300AEF4BD /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A46916CBFEC300AEF4BD /* first.png */; };
+		5423A46C16CBFEC300AEF4BD /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A46B16CBFEC300AEF4BD /* first@2x.png */; };
+		5423A46F16CBFEC300AEF4BD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423A46E16CBFEC300AEF4BD /* SecondViewController.m */; };
+		5423A47116CBFEC300AEF4BD /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A47016CBFEC300AEF4BD /* second.png */; };
+		5423A47316CBFEC300AEF4BD /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5423A47216CBFEC300AEF4BD /* second@2x.png */; };
+		5423A47616CBFEC300AEF4BD /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5423A47416CBFEC300AEF4BD /* FirstViewController.xib */; };
+		5423A47916CBFEC300AEF4BD /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5423A47716CBFEC300AEF4BD /* SecondViewController.xib */; };
+		5423A48716CC002400AEF4BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423A48616CC002400AEF4BD /* MapKit.framework */; };
+		5423A48916CC007500AEF4BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423A48816CC007500AEF4BD /* CoreLocation.framework */; };
+		5423A48C16CC03D100AEF4BD /* PinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423A48B16CC03D100AEF4BD /* PinAnnotation.m */; };
+		5423A48F16CC067700AEF4BD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423A48E16CC067700AEF4BD /* Location.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5423A44B16CBFEC200AEF4BD /* MyFindMeFindYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFindMeFindYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5423A44E16CBFEC200AEF4BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5423A45016CBFEC200AEF4BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5423A45216CBFEC200AEF4BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5423A45616CBFEC200AEF4BD /* MyFindMeFindYou-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFindMeFindYou-Info.plist"; sourceTree = "<group>"; };
+		5423A45816CBFEC200AEF4BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5423A45A16CBFEC200AEF4BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5423A45C16CBFEC200AEF4BD /* MyFindMeFindYou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFindMeFindYou-Prefix.pch"; sourceTree = "<group>"; };
+		5423A45D16CBFEC200AEF4BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5423A45E16CBFEC200AEF4BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5423A46016CBFEC200AEF4BD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5423A46216CBFEC200AEF4BD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5423A46416CBFEC200AEF4BD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5423A46616CBFEC200AEF4BD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		5423A46716CBFEC300AEF4BD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5423A46916CBFEC300AEF4BD /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = MyFindMeFindYou/first.png; sourceTree = "<group>"; };
+		5423A46B16CBFEC300AEF4BD /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "MyFindMeFindYou/first@2x.png"; sourceTree = "<group>"; };
+		5423A46D16CBFEC300AEF4BD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5423A46E16CBFEC300AEF4BD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5423A47016CBFEC300AEF4BD /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = MyFindMeFindYou/second.png; sourceTree = "<group>"; };
+		5423A47216CBFEC300AEF4BD /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "MyFindMeFindYou/second@2x.png"; sourceTree = "<group>"; };
+		5423A47516CBFEC300AEF4BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		5423A47816CBFEC300AEF4BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		5423A48616CC002400AEF4BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5423A48816CC007500AEF4BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5423A48A16CC03D100AEF4BD /* PinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinAnnotation.h; sourceTree = "<group>"; };
+		5423A48B16CC03D100AEF4BD /* PinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinAnnotation.m; sourceTree = "<group>"; };
+		5423A48D16CC067700AEF4BD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		5423A48E16CC067700AEF4BD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5423A44816CBFEC200AEF4BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5423A48916CC007500AEF4BD /* CoreLocation.framework in Frameworks */,
+				5423A48716CC002400AEF4BD /* MapKit.framework in Frameworks */,
+				5423A44F16CBFEC200AEF4BD /* UIKit.framework in Frameworks */,
+				5423A45116CBFEC200AEF4BD /* Foundation.framework in Frameworks */,
+				5423A45316CBFEC200AEF4BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5423A44216CBFEC200AEF4BD = {
+			isa = PBXGroup;
+			children = (
+				5423A48116CBFF4B00AEF4BD /* Resources */,
+				5423A45416CBFEC200AEF4BD /* MyFindMeFindYou */,
+				5423A44D16CBFEC200AEF4BD /* Frameworks */,
+				5423A44C16CBFEC200AEF4BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5423A44C16CBFEC200AEF4BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5423A44B16CBFEC200AEF4BD /* MyFindMeFindYou.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5423A44D16CBFEC200AEF4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5423A48816CC007500AEF4BD /* CoreLocation.framework */,
+				5423A48616CC002400AEF4BD /* MapKit.framework */,
+				5423A44E16CBFEC200AEF4BD /* UIKit.framework */,
+				5423A45016CBFEC200AEF4BD /* Foundation.framework */,
+				5423A45216CBFEC200AEF4BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5423A45416CBFEC200AEF4BD /* MyFindMeFindYou */ = {
+			isa = PBXGroup;
+			children = (
+				5423A48316CBFF5C00AEF4BD /* View */,
+				5423A48216CBFF5700AEF4BD /* Model */,
+				5423A48016CBFF3600AEF4BD /* Control */,
+				5423A45D16CBFEC200AEF4BD /* AppDelegate.h */,
+				5423A45E16CBFEC200AEF4BD /* AppDelegate.m */,
+				5423A45516CBFEC200AEF4BD /* Supporting Files */,
+			);
+			path = MyFindMeFindYou;
+			sourceTree = "<group>";
+		};
+		5423A45516CBFEC200AEF4BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5423A45616CBFEC200AEF4BD /* MyFindMeFindYou-Info.plist */,
+				5423A45716CBFEC200AEF4BD /* InfoPlist.strings */,
+				5423A45A16CBFEC200AEF4BD /* main.m */,
+				5423A45C16CBFEC200AEF4BD /* MyFindMeFindYou-Prefix.pch */,
+				5423A46016CBFEC200AEF4BD /* Default.png */,
+				5423A46216CBFEC200AEF4BD /* Default@2x.png */,
+				5423A46416CBFEC200AEF4BD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5423A48016CBFF3600AEF4BD /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				5423A48516CBFF6F00AEF4BD /* SecondViewController */,
+				5423A48416CBFF6400AEF4BD /* FirstViewController */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		5423A48116CBFF4B00AEF4BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5423A46916CBFEC300AEF4BD /* first.png */,
+				5423A46B16CBFEC300AEF4BD /* first@2x.png */,
+				5423A47016CBFEC300AEF4BD /* second.png */,
+				5423A47216CBFEC300AEF4BD /* second@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5423A48216CBFF5700AEF4BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5423A48D16CC067700AEF4BD /* Location.h */,
+				5423A48E16CC067700AEF4BD /* Location.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5423A48316CBFF5C00AEF4BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5423A48A16CC03D100AEF4BD /* PinAnnotation.h */,
+				5423A48B16CC03D100AEF4BD /* PinAnnotation.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5423A48416CBFF6400AEF4BD /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5423A46616CBFEC200AEF4BD /* FirstViewController.h */,
+				5423A46716CBFEC300AEF4BD /* FirstViewController.m */,
+				5423A47416CBFEC300AEF4BD /* FirstViewController.xib */,
+			);
+			name = FirstViewController;
+			sourceTree = "<group>";
+		};
+		5423A48516CBFF6F00AEF4BD /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5423A46D16CBFEC300AEF4BD /* SecondViewController.h */,
+				5423A46E16CBFEC300AEF4BD /* SecondViewController.m */,
+				5423A47716CBFEC300AEF4BD /* SecondViewController.xib */,
+			);
+			name = SecondViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5423A44A16CBFEC200AEF4BD /* MyFindMeFindYou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5423A47C16CBFEC300AEF4BD /* Build configuration list for PBXNativeTarget "MyFindMeFindYou" */;
+			buildPhases = (
+				5423A44716CBFEC200AEF4BD /* Sources */,
+				5423A44816CBFEC200AEF4BD /* Frameworks */,
+				5423A44916CBFEC200AEF4BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFindMeFindYou;
+			productName = MyFindMeFindYou;
+			productReference = 5423A44B16CBFEC200AEF4BD /* MyFindMeFindYou.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5423A44316CBFEC200AEF4BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = motoki.kawakami;
+			};
+			buildConfigurationList = 5423A44616CBFEC200AEF4BD /* Build configuration list for PBXProject "MyFindMeFindYou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5423A44216CBFEC200AEF4BD;
+			productRefGroup = 5423A44C16CBFEC200AEF4BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5423A44A16CBFEC200AEF4BD /* MyFindMeFindYou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5423A44916CBFEC200AEF4BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5423A45916CBFEC200AEF4BD /* InfoPlist.strings in Resources */,
+				5423A46116CBFEC200AEF4BD /* Default.png in Resources */,
+				5423A46316CBFEC200AEF4BD /* Default@2x.png in Resources */,
+				5423A46516CBFEC200AEF4BD /* Default-568h@2x.png in Resources */,
+				5423A46A16CBFEC300AEF4BD /* first.png in Resources */,
+				5423A46C16CBFEC300AEF4BD /* first@2x.png in Resources */,
+				5423A47116CBFEC300AEF4BD /* second.png in Resources */,
+				5423A47316CBFEC300AEF4BD /* second@2x.png in Resources */,
+				5423A47616CBFEC300AEF4BD /* FirstViewController.xib in Resources */,
+				5423A47916CBFEC300AEF4BD /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5423A44716CBFEC200AEF4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5423A45B16CBFEC200AEF4BD /* main.m in Sources */,
+				5423A45F16CBFEC200AEF4BD /* AppDelegate.m in Sources */,
+				5423A46816CBFEC300AEF4BD /* FirstViewController.m in Sources */,
+				5423A46F16CBFEC300AEF4BD /* SecondViewController.m in Sources */,
+				5423A48C16CC03D100AEF4BD /* PinAnnotation.m in Sources */,
+				5423A48F16CC067700AEF4BD /* Location.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5423A45716CBFEC200AEF4BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5423A45816CBFEC200AEF4BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5423A47416CBFEC300AEF4BD /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5423A47516CBFEC300AEF4BD /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		5423A47716CBFEC300AEF4BD /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5423A47816CBFEC300AEF4BD /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5423A47A16CBFEC300AEF4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5423A47B16CBFEC300AEF4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5423A47D16CBFEC300AEF4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFindMeFindYou/MyFindMeFindYou-Prefix.pch";
+				INFOPLIST_FILE = "MyFindMeFindYou/MyFindMeFindYou-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5423A47E16CBFEC300AEF4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFindMeFindYou/MyFindMeFindYou-Prefix.pch";
+				INFOPLIST_FILE = "MyFindMeFindYou/MyFindMeFindYou-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5423A44616CBFEC200AEF4BD /* Build configuration list for PBXProject "MyFindMeFindYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5423A47A16CBFEC300AEF4BD /* Debug */,
+				5423A47B16CBFEC300AEF4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5423A47C16CBFEC300AEF4BD /* Build configuration list for PBXNativeTarget "MyFindMeFindYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5423A47D16CBFEC300AEF4BD /* Debug */,
+				5423A47E16CBFEC300AEF4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5423A44316CBFEC200AEF4BD /* Project object */;
+}
