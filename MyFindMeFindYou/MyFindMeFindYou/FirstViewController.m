@@ -11,6 +11,7 @@
 
 #import "PinAnnotation.h"
 #import "Location.h"
+#import "SBJson.h"
 
 @interface FirstViewController ()
 @property (retain, nonatomic) IBOutlet UITextField *codeTextField;
@@ -56,6 +57,8 @@
     
     locationManager.delegate = self;
     [locationManager startUpdatingLocation]; //位置情報取得の開始.
+    
+    [self.codeTextField resignFirstResponder    ];
 }
 
 -(NSString*)currentDateString{
@@ -93,6 +96,18 @@
     PinAnnotation* pinAnnotation = [[[PinAnnotation alloc] initWithCoordinate:[self.findMeMapView centerCoordinate] title:[self currentDateString]] autorelease];
     
     [self.findMeMapView addAnnotation:pinAnnotation];
+    
+    // 位置情報のDictionaryの作成
+    NSDictionary* locationDictionary = [NSDictionary dictionaryWithObjectsAndKeys:myLocation.latitude, @"latitude",
+                                        myLocation.longitude, @"longitude",
+                                        myLocation.time, @"time",
+                                        myLocation.identificationCode, @"identificationCode", nil];
+
+    // 位置情報のDictionaryからJSONに変換
+    NSString* jsonString = [locationDictionary JSONRepresentation];
+    
+    // 変換内容を確認
+    NSLog(@"JSON:%@", jsonString);
 }
 
 -(void)locationManager:(CLLocationManager*)manager didFailWithError:(NSError *)error
