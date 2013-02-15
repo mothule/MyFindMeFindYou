@@ -108,6 +108,24 @@
     
     // 変換内容を確認
     NSLog(@"JSON:%@", jsonString);
+    
+    //サーバと通信(URLリクエスト作成 POST)
+    NSURL* serverURL = [NSURL URLWithString:@"http://myfindmefindyou.appspot.com/Location.json"];
+    NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:serverURL];
+    [req setHTTPMethod:@"POST"];
+    [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [req setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    // サーバと通信(同期通信)
+    NSURLResponse* resp = nil;
+    NSError* error = nil;
+    NSData* result = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&error];
+    if (error) {
+        NSLog(@"%@", error);
+    }else{
+        NSLog(@"Result:%@", result);
+    }
+    
 }
 
 -(void)locationManager:(CLLocationManager*)manager didFailWithError:(NSError *)error
