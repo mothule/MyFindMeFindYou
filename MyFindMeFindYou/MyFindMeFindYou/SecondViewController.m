@@ -61,7 +61,8 @@
     
     NSString* parameter = [NSString stringWithFormat:@"identificationCode=%@&time=%@", self.codeTextField.text, [self getCurrentDate]];
     
-    NSString* urlWithParameter = [NSString stringWithFormat:@"%@?%@", url, parameter];
+//    NSString* urlWithParameter = [NSString stringWithFormat:@"%@?%@", url, parameter];
+    NSString* urlWithParameter = [NSString stringWithFormat:@"%@", url];
     
     //サーバーと通信(URLリクエストを作成GET)
     NSURL* serviceURL = [NSURL URLWithString:urlWithParameter];
@@ -90,8 +91,10 @@
 }
 
 -(void)receiveSucceed:(ConnectionManager*) connectionManager{
-    NSString* receivedString = [[[NSString alloc] initWithData:connectionManager.receiveData encoding:NSUTF8StringEncoding] autorelease];
+    NSString* receivedString = [[[NSString alloc] initWithData:connectionManager.receivedData encoding:NSUTF8StringEncoding] autorelease];
     [connectionManager release];
+    NSLog(@"データ受信 %@", receivedString);
+    
     
     // JSONデータをNSDictionaryに変換
     SBJsonParser* json = [[SBJsonParser new] autorelease];
@@ -108,8 +111,13 @@
         NSString* time = [location valueForKey:@"time"];
         
         CLLocationCoordinate2D coordinate;
-        coordinate.latitude = [latitude doubleValue];
-        coordinate.longitude = [longitude doubleValue];
+        if (latitude && (id)latitude != [NSNull null]) {
+            double val = [latitude doubleValue];
+            coordinate.latitude = val;
+        }
+        if (longitude && (id)longitude != [NSNull null]) {
+            coordinate.longitude = [longitude doubleValue];
+        }
         
         // 取得した座標を中心に地図を表示
         [self.findYouMapView setCenterCoordinate:coordinate animated:NO];

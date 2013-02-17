@@ -14,7 +14,7 @@
     NSURLConnection* connection;
 }
 
-@property (readonly) NSMutableData* receiveData;
+@property (readonly) NSMutableData* receivedData;
 -(id)initWithDelegate:(id) delegate;
 -(NSURLConnection*) connectionRequest:(NSMutableURLRequest*) urlRequest;
 

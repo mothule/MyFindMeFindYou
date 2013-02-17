@@ -134,7 +134,7 @@
     NSLog(@"JSON:%@", jsonString);
     
     //サーバと通信(URLリクエスト作成 POST)
-    NSURL* serverURL = [NSURL URLWithString:@"http://myfindmefindyou.appspot.com/Location.json"];
+    NSURL* serverURL = [NSURL URLWithString:@"http://mothule-dev.appspot.com/Location.json"];
     NSMutableURLRequest* req = [NSMutableURLRequest requestWithURL:serverURL];
     [req setHTTPMethod:@"POST"];
     [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];

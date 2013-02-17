@@ -9,7 +9,7 @@
 #import "ConnectionManager.h"
 
 @implementation ConnectionManager
-@synthesize receiveData;
+@synthesize receivedData;
 
 -(id) initWithDelegate:(id)delegate{
     self = [super init];
@@ -39,12 +39,13 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    [receiveData setLength:0];
+    [receivedData setLength:0];
 }
 
 -(void)connection:(NSURLConnection*)connection didReceiveData:(NSData *)data
 {
-    [receiveData appendData:data];
+    [receivedData appendData:data];
+    NSLog(@"Did receive datas. receiveData:%@", data);
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection*) connection{
@@ -54,6 +55,7 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     [_delegate performSelector:@selector(receiveFailed:) withObject:self];
+    NSLog(@"Did fail with error Error:%@", error.userInfo);
 }
 
 
