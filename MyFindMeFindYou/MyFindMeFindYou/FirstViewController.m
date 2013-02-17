@@ -12,6 +12,7 @@
 #import "PinAnnotation.h"
 #import "Location.h"
 #import "SBJson.h"
+#import "ConnectionManager.h"
 
 @interface FirstViewController ()
 @property (retain, nonatomic) IBOutlet UITextField *codeTextField;
@@ -150,6 +151,8 @@
     }
     
 }
+
+
 
 -(void)locationManager:(CLLocationManager*)manager didFailWithError:(NSError *)error
 {

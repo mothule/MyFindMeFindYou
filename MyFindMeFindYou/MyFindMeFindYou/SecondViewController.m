@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "SBJson.h"
 #import "PinAnnotation.h"
+#import "ConnectionManager.h"
 
 @interface SecondViewController ()
 @property (retain, nonatomic) IBOutlet UITextField *codeTextField;
@@ -68,20 +69,29 @@
     [req setHTTPMethod:@"GET"];
     [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     
-    //サーバーと通信(同期通信)
-    NSURLResponse* resp = nil;
-    NSError* error = nil;
-    NSData* receiveData = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&error];
- 
-    if(error){
-        NSLog(@"Get Request Error");
-    }else{
-        NSLog(@"receveData:%@", receiveData);
-    }
+    // サーバーと通信(非同期)
+    ConnectionManager* connectionManager = [[ConnectionManager alloc] initWithDelegate:self];
+    [connectionManager connectionRequest:req];
     
-    // 受信データをNSStringにする
-    NSString* receivedString = [[[NSString alloc] initWithData:receiveData encoding:NSUTF8StringEncoding] autorelease];
-    NSLog(@"%@", receivedString);
+//    //サーバーと通信(同期通信)
+//    NSURLResponse* resp = nil;
+//    NSError* error = nil;
+//    NSData* receiveData = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&error];
+//    if(error){
+//        NSLog(@"Get Request Error");
+//    }else{
+//        NSLog(@"receveData:%@", receiveData);
+//    }
+    
+//    // 受信データをNSStringにする
+//    NSString* receivedString = [[[NSString alloc] initWithData:receiveData encoding:NSUTF8StringEncoding] autorelease];
+//    NSLog(@"%@", receivedString);
+    
+}
+
+-(void)receiveSucceed:(ConnectionManager*) connectionManager{
+    NSString* receivedString = [[[NSString alloc] initWithData:connectionManager.receiveData encoding:NSUTF8StringEncoding] autorelease];
+    [connectionManager release];
     
     // JSONデータをNSDictionaryに変換
     SBJsonParser* json = [[SBJsonParser new] autorelease];
@@ -115,6 +125,12 @@
         [self.findYouMapView addAnnotation:pinAnnotation];
     }
 }
+
+-(void)receiveFailed:(ConnectionManager*)connectionManager{
+    NSLog(@"Error!");
+    [connectionManager release];
+}
+
 
 -(NSString*) getCurrentDate{
     NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
