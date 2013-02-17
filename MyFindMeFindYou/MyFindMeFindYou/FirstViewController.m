@@ -26,8 +26,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.title = NSLocalizedString(@"FindMe", @"FindMe");
+        self.tabBarItem.image = [UIImage imageNamed:@"findMe"];
     }
     return self;
 }
@@ -35,6 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.codeTextField.returnKeyType = UIReturnKeyDone;
 }
 
 - (void)dealloc {
@@ -59,6 +60,28 @@
     [locationManager startUpdatingLocation]; //位置情報取得の開始.
     
     [self.codeTextField resignFirstResponder    ];
+
+    if ([CLLocationManager locationServicesEnabled]) {
+        // ロケーション情報が利用できる状態
+        if (locationManager == nil) {
+            locationManager = [[CLLocationManager alloc] init];
+        }
+        locationManager.delegate = self;
+        
+        if ([[[self.logStartButton titleLabel] text] isEqualToString:@"記録開始"]) {
+            [locationManager startUpdatingLocation]; // 位置情報取得を開始
+            [self.logStartButton setTitle:@"記録停止" forState:UIControlStateNormal];
+        } else {
+            [locationManager stopUpdatingLocation]; // 位置情報取得
+            [self.logStartButton setTitle:@"記録開始" forState:UIControlStateNormal];
+        }
+    }else{
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"報告" message:@"位置情報サービスが利用できません。サービスを有効にしてください"
+                                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+    }
 }
 
 -(NSString*)currentDateString{

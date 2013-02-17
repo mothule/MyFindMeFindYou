@@ -40,6 +40,12 @@
 		549D2AD816CD595200B513F3 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 549D2ACA16CD595200B513F3 /* SBJsonTokeniser.m */; };
 		549D2AD916CD595200B513F3 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 549D2ACC16CD595200B513F3 /* SBJsonUTF8Stream.m */; };
 		549D2ADA16CD595200B513F3 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 549D2ACE16CD595200B513F3 /* SBJsonWriter.m */; };
+		54AC308516D0D262008093F1 /* findMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AC307F16D0D261008093F1 /* findMe.png */; };
+		54AC308616D0D262008093F1 /* findMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AC308016D0D261008093F1 /* findMe@2x.png */; };
+		54AC308716D0D262008093F1 /* findMefindyou.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AC308116D0D262008093F1 /* findMefindyou.png */; };
+		54AC308816D0D262008093F1 /* findMefindYou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AC308216D0D262008093F1 /* findMefindYou@2x.png */; };
+		54AC308916D0D262008093F1 /* findYou.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AC308316D0D262008093F1 /* findYou.png */; };
+		54AC308A16D0D262008093F1 /* findYou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AC308416D0D262008093F1 /* findYou@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +104,12 @@
 		549D2ACC16CD595200B513F3 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		549D2ACD16CD595200B513F3 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		549D2ACE16CD595200B513F3 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		54AC307F16D0D261008093F1 /* findMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findMe.png; sourceTree = "<group>"; };
+		54AC308016D0D261008093F1 /* findMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findMe@2x.png"; sourceTree = "<group>"; };
+		54AC308116D0D262008093F1 /* findMefindyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findMefindyou.png; sourceTree = "<group>"; };
+		54AC308216D0D262008093F1 /* findMefindYou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findMefindYou@2x.png"; sourceTree = "<group>"; };
+		54AC308316D0D262008093F1 /* findYou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findYou.png; sourceTree = "<group>"; };
+		54AC308416D0D262008093F1 /* findYou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findYou@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +198,12 @@
 		5423A48116CBFF4B00AEF4BD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				54AC307F16D0D261008093F1 /* findMe.png */,
+				54AC308016D0D261008093F1 /* findMe@2x.png */,
+				54AC308116D0D262008093F1 /* findMefindyou.png */,
+				54AC308216D0D262008093F1 /* findMefindYou@2x.png */,
+				54AC308316D0D262008093F1 /* findYou.png */,
+				54AC308416D0D262008093F1 /* findYou@2x.png */,
 				5423A46916CBFEC300AEF4BD /* first.png */,
 				5423A46B16CBFEC300AEF4BD /* first@2x.png */,
 				5423A47016CBFEC300AEF4BD /* second.png */,
@@ -334,6 +352,12 @@
 				5423A47316CBFEC300AEF4BD /* second@2x.png in Resources */,
 				5423A47616CBFEC300AEF4BD /* FirstViewController.xib in Resources */,
 				5423A47916CBFEC300AEF4BD /* SecondViewController.xib in Resources */,
+				54AC308516D0D262008093F1 /* findMe.png in Resources */,
+				54AC308616D0D262008093F1 /* findMe@2x.png in Resources */,
+				54AC308716D0D262008093F1 /* findMefindyou.png in Resources */,
+				54AC308816D0D262008093F1 /* findMefindYou@2x.png in Resources */,
+				54AC308916D0D262008093F1 /* findYou.png in Resources */,
+				54AC308A16D0D262008093F1 /* findYou@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
