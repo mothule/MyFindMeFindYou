@@ -79,6 +79,7 @@
 		5423A48B16CC03D100AEF4BD /* PinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinAnnotation.m; sourceTree = "<group>"; };
 		5423A48D16CC067700AEF4BD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		5423A48E16CC067700AEF4BD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		54595BC016D68A3000F31BC8 /* MyFindMeFindYouConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFindMeFindYouConst.h; sourceTree = "<group>"; };
 		549D2AB516CD595200B513F3 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		549D2AB616CD595200B513F3 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		549D2AB716CD595200B513F3 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 				5423A45D16CBFEC200AEF4BD /* AppDelegate.h */,
 				5423A45E16CBFEC200AEF4BD /* AppDelegate.m */,
 				5423A45516CBFEC200AEF4BD /* Supporting Files */,
+				54595BC016D68A3000F31BC8 /* MyFindMeFindYouConst.h */,
 			);
 			path = MyFindMeFindYou;
 			sourceTree = "<group>";

@@ -57,12 +57,12 @@
     [self.codeTextField resignFirstResponder];
     
         // パラメータ付きのURLを作成
-    NSString* url = @"http://myfindmefindyou.appspot.com/Location.json";
+    NSString* url = CONNECTION_URL; // @"http://myfindmefindyou.appspot.com/Location.json";
     
     NSString* parameter = [NSString stringWithFormat:@"identificationCode=%@&time=%@", self.codeTextField.text, [self getCurrentDate]];
     
-//    NSString* urlWithParameter = [NSString stringWithFormat:@"%@?%@", url, parameter];
-    NSString* urlWithParameter = [NSString stringWithFormat:@"%@", url];
+    NSString* urlWithParameter = [NSString stringWithFormat:@"%@?%@", url, parameter];
+//    NSString* urlWithParameter = [NSString stringWithFormat:@"%@", url];
     
     //サーバーと通信(URLリクエストを作成GET)
     NSURL* serviceURL = [NSURL URLWithString:urlWithParameter];
